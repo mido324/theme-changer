@@ -54,7 +54,7 @@ updateEditStatus(val) {
           <SizeChanger update={this.updateSize} />
           <FamilyChanger update={this.updateFamily}
           allowEdit={this.state.allowEdit} />
-          { /* Render FamilyChanger */ }
+          <TextContainer fontColor={this.state.fontColor} fontSize={this.state.fontSize} fontFamily={this.state.fontFamily} />
         </div>
         <div className="textArea">
           { /* Render TextContainer */ }
