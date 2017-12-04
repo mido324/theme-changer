@@ -28,7 +28,7 @@ allowEdit : 'true'
 updateColor(val) {
   this.setState ({
  fontColor: val
-  });
+  })
 }
   // updateSize
 updateSize(val) {
@@ -50,14 +50,14 @@ updateEditStatus(val) {
         <div className="headerBar">
             <EditToggle update={this.updateEditStatus} />
 
-           <colorChanger update= {this.updateColor} />
+           <ColorChanger update= {this.updateColor} />
           <SizeChanger update={this.updateSize} />
           <FamilyChanger update={this.updateFamily}
           allowEdit={this.state.allowEdit} />
-          <TextContainer fontColor={this.state.fontColor} fontSize={this.state.fontSize} fontFamily={this.state.fontFamily} />
+         
         </div>
         <div className="textArea">
-          { /* Render TextContainer */ }
+           <TextContainer fontColor={this.state.fontColor} fontSize={this.state.fontSize} fontFamily={this.state.fontFamily} />
         </div>
       </div>
     )
